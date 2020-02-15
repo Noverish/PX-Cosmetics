@@ -13,6 +13,7 @@ const App = () => {
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState('');
   const PAGE_SIZE = (window.innerWidth < 769) ? MOBILE_PAGE_SIZE : DESKTOP_PAGE_SIZE;
+  const isMobile = window.innerWidth < 768;
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/db.json`)
@@ -42,7 +43,7 @@ const App = () => {
       <Title style={{ textAlign: 'right' }} level={4}>마지막 업데이트: 2020-02-09</Title>
       <Search enterButton="Search" onChange={onQueryChange} value={query} />
       <ProductList products={sliced} />
-      <Pagination onChange={onChange} current={page} total={total} pageSize={PAGE_SIZE} />
+      <Pagination onChange={onChange} current={page} total={total} pageSize={PAGE_SIZE} size={isMobile ? "small" : ""} />
     </div>
   );
 }
