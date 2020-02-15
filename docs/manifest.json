@@ -1,0 +1,8 @@
+{
+  "short_name": "PX Cosmetics",
+  "name": "List of PX Cosmetics",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

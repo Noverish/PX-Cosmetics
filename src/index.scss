@@ -1,0 +1,202 @@
+$DIVIER_COLOR: #dddddd;
+$HOVER_BACKGROUND: #eeeeee;
+$TITLE_COLOR: rgba(0, 0, 0, 0.85);
+$TEXT_COLOR: rgba(0, 0, 0, 0.65);
+$BORDER: 1px solid $DIVIER_COLOR;
+
+@mixin desktop {
+	@media screen and (min-width: 769px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+#root {
+  min-height: 100%;
+  background: #f0f2f5;
+
+  @include desktop {
+    padding: 48px;
+  }
+
+  & > div {
+    background: #fff;
+
+    @include desktop {
+      padding: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      padding: 24px 0;
+    }
+  }
+}
+
+.ant-input-search {
+  @include desktop {
+    width: 300px;
+    padding: 0 0 10px 0;
+    float: right;
+  }
+
+  @include mobile {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+.ant-pagination {
+  margin-top: 16px;
+  text-align: center;
+}
+
+h4.ant-typography {
+  margin-right: 12px;
+}
+
+@include desktop {
+  .table {
+    display: table;
+    width: 100%;
+    border: $BORDER;
+  }
+  
+  .thead {
+    display: table-header-group;
+    font-weight: bold;
+    background: #fafafa;
+    color: $TITLE_COLOR;
+  }
+  
+  .tbody {
+    display: table-row-group;
+  
+    .tr:hover {
+      background: $HOVER_BACKGROUND;
+    }
+
+    .tr span {
+      border-top: $BORDER;
+    }
+  }
+  
+  .tr {
+    display: table-row;
+    color: $TEXT_COLOR;
+
+    span {
+      display: table-cell;
+      padding: 8px 0;
+      text-align: center;
+      vertical-align: middle;
+
+      &.name {
+        text-align: left;
+        color: #1890ff;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .table {
+    width: 100%;
+    border: $BORDER;
+    color: $TEXT_COLOR;
+  }
+
+  .thead {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    color: $TEXT_COLOR;
+
+    &:not(:first-child) {
+      border-top: $BORDER;
+    }
+
+    .first-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8px;
+    }
+
+    .second-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .float-right {
+      margin-left: auto;
+    }
+
+    span:not(:last-child) {
+      padding: 0 4px 0 0;
+    }
+  }
+  
+  .name {
+    color: #1890ff;
+  }
+
+  .amount {
+    white-space: nowrap;
+    margin-left: auto;
+  }
+}
+
+
+// .row {
+
+//   @include desktop {
+//     
+//   }
+
+//   @include mobile {
+//     display: flex;
+//     flex-direction: column;
+
+//     .first-row {
+//       margin-bottom: 8px;
+//       display: flex;
+//     }
+//   }
+
+  
+
+//   span {
+//     @include desktop {
+//       display: table-cell;
+//     }
+
+//     @include mobile {
+
+//     }
+   
+  
+//     &.title {
+//       @include desktop {
+//         
+//       }
+
+//       @include mobile {
+//       }
+//     }
+//   }
+// }
+
+// .float-left {
+//   margin-left: auto;
+// }
+
+// table
