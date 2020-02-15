@@ -15,7 +15,7 @@ const App = () => {
   const PAGE_SIZE = (window.innerWidth < 769) ? MOBILE_PAGE_SIZE : DESKTOP_PAGE_SIZE;
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then((response) => response.json())
       .then(setProducts)
       .catch((err) => {
