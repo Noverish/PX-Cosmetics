@@ -7,11 +7,13 @@ interface Props {
   product: Product;
 }
 
-export const ProductItem = (props: Props) => {
+export default (props: Props) => {
   const { product } = props;
   const isMobile = window.innerWidth < 768;
 
-  const { id, name, amount, link } = product;
+  const {
+    id, name, amount, link,
+  } = product;
   const price: string = numberWithCommas(product.price);
   const linkName: string | undefined = getLinkName(product.link);
 
@@ -24,22 +26,22 @@ export const ProductItem = (props: Props) => {
           <span className="amount">{amount}</span>
         </div>
         <div className="second-row">
-          <span>₩ {price}</span>
+          <span>
+            ₩
+            {price}
+          </span>
           <span className="float-right">{linkName}</span>
         </div>
       </a>
-    )
-  } else {
-    return (
-      <a className="tr" href={link} target="_blank" rel="noopener noreferrer">
-        <span>{id}</span>
-        <span className="name">{name}</span>
-        <span>{amount}</span>
-        <span>{price}</span>
-        <span>{linkName}</span>
-      </a>
-    )
+    );
   }
-
-  
-}
+  return (
+    <a className="tr" href={link} target="_blank" rel="noopener noreferrer">
+      <span>{id}</span>
+      <span className="name">{name}</span>
+      <span>{amount}</span>
+      <span>{price}</span>
+      <span>{linkName}</span>
+    </a>
+  );
+};

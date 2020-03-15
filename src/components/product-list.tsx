@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Product } from 'src/models';
-import { ProductItem } from './product-item';
+import ProductItem from './product-item';
 
 interface Props {
   products: Product[];
@@ -19,9 +19,9 @@ const header = (
     <span>가격</span>
     <span>링크</span>
   </div>
-)
+);
 
-export const ProductList = (props: Props) => {
+export default (props: Props) => {
   const { products } = props;
 
   const list = products.map(renderItem);
@@ -35,5 +35,5 @@ export const ProductList = (props: Props) => {
         {list}
       </div>
     </div>
-  )
-}
+  );
+};

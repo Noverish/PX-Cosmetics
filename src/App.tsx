@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Input, Pagination  } from 'antd';
+import { Typography, Input, Pagination } from 'antd';
 
 import { Product } from 'src/models';
 import { ProductList } from 'src/components';
@@ -21,19 +21,19 @@ const App = () => {
       .then(setProducts)
       .catch((err) => {
         console.log(err);
-      })
+      });
   }, []);
 
-  const onChange = (page: number) => {
-    setPage(page);
-  }
+  const onChange = (pageParam: number) => {
+    setPage(pageParam);
+  };
 
   const onQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
     setPage(1);
-  }
+  };
 
-  const filtered = products.filter(p => p.name.includes(query))
+  const filtered = products.filter((p) => p.name.includes(query));
   const sliced = filtered.slice(PAGE_SIZE * (page - 1), PAGE_SIZE * page);
   const total = filtered.length;
 
@@ -43,9 +43,9 @@ const App = () => {
       <Title style={{ textAlign: 'right' }} level={4}>마지막 업데이트: 2020-02-09</Title>
       <Search enterButton="Search" onChange={onQueryChange} value={query} />
       <ProductList products={sliced} />
-      <Pagination onChange={onChange} current={page} total={total} pageSize={PAGE_SIZE} size={isMobile ? "small" : ""} />
+      <Pagination onChange={onChange} current={page} total={total} pageSize={PAGE_SIZE} size={isMobile ? 'small' : ''} />
     </div>
   );
-}
+};
 
 export default App;
