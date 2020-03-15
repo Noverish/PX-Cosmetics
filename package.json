@@ -1,7 +1,6 @@
 {
   "name": "PX-Cosmetics",
-  "description": ".",
-  "license": "ISC",
+  "private": true,
   "scripts": {
     "start": "PORT=8700 react-app-rewired start",
     "build": "rm -rf docs && GENERATE_SOURCEMAP=false react-app-rewired build && mv build docs",
@@ -33,10 +32,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^1.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Noverish/PX-Cosmetics.git"
   },
   "browserslist": {
     "production": [
