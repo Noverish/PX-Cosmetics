@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/PX-Cosmetics/static/css/main.67b09f7a.chunk.css",
-    "main.js": "/PX-Cosmetics/static/js/main.bfdd2c7f.chunk.js",
-    "runtime-main.js": "/PX-Cosmetics/static/js/runtime-main.0f2975a7.js",
-    "static/css/2.49af80bc.chunk.css": "/PX-Cosmetics/static/css/2.49af80bc.chunk.css",
-    "static/js/2.4f21a47f.chunk.js": "/PX-Cosmetics/static/js/2.4f21a47f.chunk.js",
-    "index.html": "/PX-Cosmetics/index.html",
-    "precache-manifest.178fd3082911c0e2ffbf660a84ad593a.js": "/PX-Cosmetics/precache-manifest.178fd3082911c0e2ffbf660a84ad593a.js",
-    "service-worker.js": "/PX-Cosmetics/service-worker.js",
-    "static/js/2.4f21a47f.chunk.js.LICENSE.txt": "/PX-Cosmetics/static/js/2.4f21a47f.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.8df372bf.chunk.css",
+    "main.js": "/static/js/main.fa284465.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.09341ddc.js",
+    "static/css/2.31b7a2fd.chunk.css": "/static/css/2.31b7a2fd.chunk.css",
+    "static/js/2.16294bd1.chunk.js": "/static/js/2.16294bd1.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.a24b7c404756f6058ebf392ebc25f6b7.js": "/precache-manifest.a24b7c404756f6058ebf392ebc25f6b7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.16294bd1.chunk.js.LICENSE.txt": "/static/js/2.16294bd1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f2975a7.js",
-    "static/css/2.49af80bc.chunk.css",
-    "static/js/2.4f21a47f.chunk.js",
-    "static/css/main.67b09f7a.chunk.css",
-    "static/js/main.bfdd2c7f.chunk.js"
+    "static/js/runtime-main.09341ddc.js",
+    "static/css/2.31b7a2fd.chunk.css",
+    "static/js/2.16294bd1.chunk.js",
+    "static/css/main.8df372bf.chunk.css",
+    "static/js/main.fa284465.chunk.js"
   ]
 }

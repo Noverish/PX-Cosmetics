@@ -23,6 +23,9 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-mixed-operators": "off",
+    "max-len": "off",
+    "import/prefer-default-export": "off"
   },
   "settings": {
     "import/resolver": {
