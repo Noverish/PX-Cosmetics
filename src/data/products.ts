@@ -215,70 +215,81 @@ const products: Product[] = [
     realPrice: 23410,
   },
   {
-    name: '레모나산 2g 10개',
+    name: '레모나산 2g 10포',
     price: 1550,
     section: 3,
     area: [5, 7, 14, 12],
+    realPrice: 1930
   },
   {
     name: '생유산균 가득 냠냠 요구르트 15g',
     price: 860,
     section: 3,
     area: [7, 9, 16, 14],
+    realPrice: 1640
   },
   {
-    name: '함소아오비타 1.43g 15정',
+    name: '함소아오비타 1.43g x 15정',
     price: 1300,
     section: 3,
     area: [9, 11, 17, 16],
+    realPrice: 1400
   },
   {
     name: '레모나에스산 1.5g 200포',
     price: 18150,
     section: 3,
     area: [12, 13, 19, 18],
+    realPrice: 29440
   },
   {
-    name: '내몸애 발란스 멀티비타민 앤 미네랄 파워업 800mg 30정 3개입 (72g)',
+    name: '내몸애 발란스 멀티비타민 앤 미네랄파워업(30정 X 3개입)',
     price: 9900,
     section: 3,
     area: [13, 15, 21, 19],
+    realPrice: 29800
   },
   {
-    name: '내몸애 관절액션MSM 850mg 30정 3개입',
+    name: '내몸애 발란스 관절액션 MSM (30정 X 3개입)',
     price: 9900,
     section: 3,
     area: [15, 17, 23, 21],
+    realPrice: 30000
   },
   {
-    name: '뉴트리팩 600mg 120캡슐',
+    name: '정관장 알파프로젝트 뉴트리팩 600mg 120캡슐',
     price: 28490,
     section: 3,
     area: [18, 20, 25, 24],
+    realPrice: 69300
   },
   {
     name: '관절살리도 610mg 42정',
     price: 34900,
     section: 3,
     area: [20, 22, 27, 25],
+    realPrice: 58310
   },
   {
-    name: '헬스원오메가-3 194g',
+    name: '롯데헬스원 오메가세트 194g',
     price: 28300,
     section: 3,
     area: [22, 23, 28, 27],
+    realPrice: 34880
   },
   {
-    name: '베리석류진액골드유기농석류즙100 70ml 30포',
+    name: '애플트리 베리 석류 진액골드 유기농 석류즙100 (70ml x 30포)',
     price: 19500,
     section: 3,
     area: [24, 26, 30, 29],
+    realPrice: 62100
   },
   {
     name: '내몸애 생발란스 석류진액 70ml 30포',
     price: 22800,
     section: 3,
     area: [26, 28, 31, 30],
+    realPrice: 62250
   },
 ];
 
