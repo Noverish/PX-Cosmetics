@@ -58,8 +58,8 @@ const App = () => {
     const nowVertices = vertices[section] || [];
 
     return (
-      <SwiperSlide key={section} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/00${section}.jpg)` }}>
-        <Canvas src={`${process.env.PUBLIC_URL}/img/00${section}.jpg`} vertices={nowVertices} products={nowProducts} onProductClick={setClickedProduct} />
+      <SwiperSlide key={section} style={{ backgroundImage: `url(PX-Cosmetics/img/00${section}.jpg)` }}>
+        <Canvas src={`PX-Cosmetics/img/00${section}.jpg`} vertices={nowVertices} products={nowProducts} onProductClick={setClickedProduct} />
       </SwiperSlide>
     );
   }), []);
