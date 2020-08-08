@@ -1,6 +1,7 @@
 {
   "name": "PX-Cosmetics",
   "private": true,
+  "homepage": "https://noverish.github.io/PX-Cosmetics",
   "scripts": {
     "start": "PORT=8700 react-app-rewired start",
     "build": "rm -rf docs && GENERATE_SOURCEMAP=false react-app-rewired build && mv build docs",
