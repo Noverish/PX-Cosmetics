@@ -1,0 +1,17 @@
+$DIVIER_COLOR: #dddddd;
+$HOVER_BACKGROUND: #eeeeee;
+$TITLE_COLOR: rgba(0, 0, 0, 0.85);
+$TEXT_COLOR: rgba(0, 0, 0, 0.65);
+$BORDER: 1px solid $DIVIER_COLOR;
+
+@mixin desktop {
+	@media screen and (min-width: 769px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}

@@ -2,7 +2,16 @@ export interface Product {
   name: string;
   price: number;
   section: number;
-  area: [number, number, number, number];
+  area: PercentCoord[];
+  realPrice?: number;
+  link: string;
+}
+
+export interface ProductDAO {
+  name: string;
+  price: number;
+  section: number;
+  area: number[];
   realPrice?: number;
   link?: string;
 }
@@ -22,4 +31,15 @@ export type ProductWithCoord = {
   product: Product;
   x: number;
   y: number;
+};
+
+export type Polygon = {
+  vertices: PercentCoord[],
+  fillStyle: string,
+  strokeStyle: string,
+};
+
+export type SwiperSize = {
+  width: number;
+  height: number;
 };

@@ -25,7 +25,8 @@
   "rules": {
     "no-mixed-operators": "off",
     "max-len": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "radix": "off"
   },
   "settings": {
     "import/resolver": {

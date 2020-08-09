@@ -1,32 +1,53 @@
-html, body, #root {
+@import '_common';
+
+html, body {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
 #root {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
+  min-height: 100%;
+  background: #f0f2f5;
+
+  @include desktop {
+    padding: 48px;
+  }
+
+  & > div {
+    background: white;
+
+    @include desktop {
+      padding: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      padding: 24px 0;
+    }
+  }
 }
 
-p {
-  margin-top: Z0;
-}
+// #root {
+//   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+//   display: -ms-flexbox;  /* TWEENER - IE 10 */
+//   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+//   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+//   flex-direction: column;
+//   justify-content: stretch;
+//   align-items: center;
+// }
 
-.swiper-container {
-  width: 100%;
-  flex: 1 1 auto;
-  background-color: black;
-}
+// p {
+//   margin-top: Z0;
+// }
 
-.swiper-slide {
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center; 
-}
+// .swiper-container {
+//   width: 100%;
+//   flex: 1 1 auto;
+//   background-color: black;
+// }
+
+// .swiper-slide { 
+// }
