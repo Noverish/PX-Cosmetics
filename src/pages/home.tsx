@@ -53,7 +53,7 @@ const HomePage = () => {
       <Title style={{ textAlign: 'right' }} level={4}>마지막 업데이트: 2020-08-10</Title>
       <div className="search-bar">
         <Search enterButton="Search" onChange={onQueryChange} value={query} />
-        <Dropdown overlay={menu} placement="bottomRight" trigger={['click', 'hover']}>
+        <Dropdown overlay={menu} placement="bottomRight" trigger={['click']}>
           <Button type="primary">사진으로 찾기</Button>
         </Dropdown>
       </div>

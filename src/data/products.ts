@@ -492,14 +492,20 @@ const productsDAO: ProductDAO[] = [
 ];
 
 const products: Product[] = productsDAO.map((v) => {
-  const verticesInSection = vertices[v.section];
-  const newArea = v.area.map((v2) => verticesInSection[v2]);
+  const {
+    price, realPrice, section, area,
+  } = v;
+
+  const verticesInSection = vertices[section];
+  const newArea = area.map((v2) => verticesInSection[v2]);
+  const rate = realPrice ? Math.floor((realPrice - price) / realPrice * 100) : undefined;
   sortCoordClockwise(newArea);
 
   return {
     ...v,
     area: newArea,
     link: v.link || `https://search.shopping.naver.com/search/all?query=${v.name}`,
+    rate,
   };
 });
 

@@ -4,6 +4,7 @@ export interface Product {
   section: number;
   area: PercentCoord[];
   realPrice?: number;
+  rate?: number;
   link: string;
 }
 
