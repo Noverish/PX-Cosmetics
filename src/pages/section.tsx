@@ -10,7 +10,7 @@ import { setClickedProduct } from 'src/redux/clicked-product';
 import { PercentCoord, Product, Polygon } from 'src/models';
 import { useWindowSize } from 'src/hooks';
 import { coordInPolygon } from 'src/utils';
-import { products } from 'src/data';
+import { products, vertices } from 'src/data';
 import { RootState } from 'src/redux';
 
 interface Size {
@@ -49,6 +49,10 @@ const SectionPage = () => {
   const onCanvasClick = useCallback((coord: PercentCoord) => {
     const newClickedProduct = findClickedProduct(section, coord);
     dispatch(setClickedProduct(newClickedProduct));
+
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`[${coord.x}, ${coord.y}],`);
+    }
   }, [section, dispatch]);
 
   useEffect(() => {
@@ -60,6 +64,7 @@ const SectionPage = () => {
   }, [windowWidth]);
 
   const polygons = useMemo(() => clickedProductToPolygon(clickedProduct), [clickedProduct]);
+  const vertices2 = useMemo(() => vertices[section] || [], [section]);
 
   return (
     <>
@@ -70,7 +75,7 @@ const SectionPage = () => {
         className="section-image-div"
         style={{ backgroundImage: `url(${imgSrc})`, height: size.height }}
       >
-        <Canvas polygons={polygons} onClick={onCanvasClick} width={size.width} height={size.height} />
+        <Canvas polygons={polygons} onClick={onCanvasClick} width={size.width} height={size.height} vertices={vertices2} />
       </div>
     </>
   );

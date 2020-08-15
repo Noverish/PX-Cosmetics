@@ -30,15 +30,27 @@ function drawPolygon(ctx: CanvasRenderingContext2D, polygon: Polygon) {
   ctx.restore();
 }
 
+function drawVertex(ctx: CanvasRenderingContext2D, vertex: PercentCoord, index: number) {
+  const { width } = ctx.canvas;
+  const { height } = ctx.canvas;
+  const realX = vertex.x * width / 100;
+  const realY = vertex.y * height / 100;
+
+  ctx.font = '30px Arial';
+  ctx.fillStyle = 'black';
+  ctx.fillText(index.toString(), realX, realY);
+}
+
 interface Props {
   polygons: Polygon[];
   width: number;
   height: number;
+  vertices: PercentCoord[];
   onClick?: (coord: PercentCoord) => void;
 }
 
 const Canvas = ({
-  polygons, width, height, onClick,
+  polygons, width, height, onClick, vertices,
 }: Props) => {
   const canvasRef = useRef(null as HTMLCanvasElement | null);
 
@@ -49,8 +61,12 @@ const Canvas = ({
     if (canvas && context) {
       context.clearRect(0, 0, width, height);
       polygons.forEach((v) => drawPolygon(context, v));
+
+      if (process.env.NODE_ENV === 'development') {
+        vertices.forEach((v, i) => drawVertex(context, v, i));
+      }
     }
-  }, [width, height, polygons]);
+  }, [width, height, polygons, vertices]);
 
   const onClick2 = useCallback((e) => {
     const tmp = e.currentTarget.getBoundingClientRect();
