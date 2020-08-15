@@ -1,9 +1,9 @@
 {
-  "name": "PX-Cosmetics",
+  "name": "px-cosmetics",
   "private": true,
   "homepage": "https://noverish.github.io/PX-Cosmetics",
   "scripts": {
-    "start": "PORT=8700 react-app-rewired start",
+    "start": "react-app-rewired start",
     "build": "rm -rf build && react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
@@ -25,7 +25,7 @@
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.0",
+    "react-scripts": "^3.4.3",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
