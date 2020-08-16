@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e4f3a2d3bd1e25bb7a48a8f0089dc62",
+    "revision": "6a03f179e31640a83eac88740bf3cca4",
     "url": "/PX-Cosmetics/index.html"
   },
   {
-    "revision": "bf4f554ed69e2c876385",
+    "revision": "892bc50db0d74763f6f1",
     "url": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css"
   },
   {
-    "revision": "10a3b08e4993a824ee11",
+    "revision": "603e16201643f8ff7ad9",
     "url": "/PX-Cosmetics/static/css/main.189465b6.chunk.css"
   },
   {
-    "revision": "bf4f554ed69e2c876385",
-    "url": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js"
+    "revision": "892bc50db0d74763f6f1",
+    "url": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js"
   },
   {
     "revision": "9a0e6ad7df4effc3aa6ea7f039958117",
-    "url": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js.LICENSE.txt"
+    "url": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "10a3b08e4993a824ee11",
-    "url": "/PX-Cosmetics/static/js/main.bfcf15b4.chunk.js"
+    "revision": "603e16201643f8ff7ad9",
+    "url": "/PX-Cosmetics/static/js/main.eff711fa.chunk.js"
   },
   {
     "revision": "477f70dc27a82f112cf7",

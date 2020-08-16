@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/PX-Cosmetics/static/css/main.189465b6.chunk.css",
-    "main.js": "/PX-Cosmetics/static/js/main.bfcf15b4.chunk.js",
-    "main.js.map": "/PX-Cosmetics/static/js/main.bfcf15b4.chunk.js.map",
+    "main.js": "/PX-Cosmetics/static/js/main.eff711fa.chunk.js",
+    "main.js.map": "/PX-Cosmetics/static/js/main.eff711fa.chunk.js.map",
     "runtime-main.js": "/PX-Cosmetics/static/js/runtime-main.724c1f9e.js",
     "runtime-main.js.map": "/PX-Cosmetics/static/js/runtime-main.724c1f9e.js.map",
     "static/css/2.94b28f9f.chunk.css": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css",
-    "static/js/2.7f0074bc.chunk.js": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js",
-    "static/js/2.7f0074bc.chunk.js.map": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js.map",
+    "static/js/2.433cd72c.chunk.js": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js",
+    "static/js/2.433cd72c.chunk.js.map": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js.map",
     "index.html": "/PX-Cosmetics/index.html",
-    "precache-manifest.1aaee24e64158042a8bc3fe1c5f802b7.js": "/PX-Cosmetics/precache-manifest.1aaee24e64158042a8bc3fe1c5f802b7.js",
+    "precache-manifest.43f7c336a15b2c0dd14878e2654c9f64.js": "/PX-Cosmetics/precache-manifest.43f7c336a15b2c0dd14878e2654c9f64.js",
     "service-worker.js": "/PX-Cosmetics/service-worker.js",
     "static/css/2.94b28f9f.chunk.css.map": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css.map",
     "static/css/main.189465b6.chunk.css.map": "/PX-Cosmetics/static/css/main.189465b6.chunk.css.map",
-    "static/js/2.7f0074bc.chunk.js.LICENSE.txt": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js.LICENSE.txt"
+    "static/js/2.433cd72c.chunk.js.LICENSE.txt": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.724c1f9e.js",
     "static/css/2.94b28f9f.chunk.css",
-    "static/js/2.7f0074bc.chunk.js",
+    "static/js/2.433cd72c.chunk.js",
     "static/css/main.189465b6.chunk.css",
-    "static/js/main.bfcf15b4.chunk.js"
+    "static/js/main.eff711fa.chunk.js"
   ]
 }
