@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PX-Cosmetics/static/css/main.189465b6.chunk.css",
-    "main.js": "/PX-Cosmetics/static/js/main.4d6c3472.chunk.js",
-    "main.js.map": "/PX-Cosmetics/static/js/main.4d6c3472.chunk.js.map",
+    "main.js": "/PX-Cosmetics/static/js/main.bfcf15b4.chunk.js",
+    "main.js.map": "/PX-Cosmetics/static/js/main.bfcf15b4.chunk.js.map",
     "runtime-main.js": "/PX-Cosmetics/static/js/runtime-main.724c1f9e.js",
     "runtime-main.js.map": "/PX-Cosmetics/static/js/runtime-main.724c1f9e.js.map",
     "static/css/2.94b28f9f.chunk.css": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css",
     "static/js/2.7f0074bc.chunk.js": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js",
     "static/js/2.7f0074bc.chunk.js.map": "/PX-Cosmetics/static/js/2.7f0074bc.chunk.js.map",
     "index.html": "/PX-Cosmetics/index.html",
-    "precache-manifest.f2be473f7d2e86a6bdca689f85c7b759.js": "/PX-Cosmetics/precache-manifest.f2be473f7d2e86a6bdca689f85c7b759.js",
+    "precache-manifest.1aaee24e64158042a8bc3fe1c5f802b7.js": "/PX-Cosmetics/precache-manifest.1aaee24e64158042a8bc3fe1c5f802b7.js",
     "service-worker.js": "/PX-Cosmetics/service-worker.js",
     "static/css/2.94b28f9f.chunk.css.map": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css.map",
     "static/css/main.189465b6.chunk.css.map": "/PX-Cosmetics/static/css/main.189465b6.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.94b28f9f.chunk.css",
     "static/js/2.7f0074bc.chunk.js",
     "static/css/main.189465b6.chunk.css",
-    "static/js/main.4d6c3472.chunk.js"
+    "static/js/main.bfcf15b4.chunk.js"
   ]
 }
