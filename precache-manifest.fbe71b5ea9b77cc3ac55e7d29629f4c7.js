@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a03f179e31640a83eac88740bf3cca4",
+    "revision": "2946f5476670c07bb4db161f96affc63",
     "url": "/PX-Cosmetics/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PX-Cosmetics/static/css/2.94b28f9f.chunk.css"
   },
   {
-    "revision": "603e16201643f8ff7ad9",
+    "revision": "b47f2e0a50610961dbe7",
     "url": "/PX-Cosmetics/static/css/main.189465b6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PX-Cosmetics/static/js/2.433cd72c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "603e16201643f8ff7ad9",
-    "url": "/PX-Cosmetics/static/js/main.eff711fa.chunk.js"
+    "revision": "b47f2e0a50610961dbe7",
+    "url": "/PX-Cosmetics/static/js/main.86a5e9ac.chunk.js"
   },
   {
     "revision": "477f70dc27a82f112cf7",
