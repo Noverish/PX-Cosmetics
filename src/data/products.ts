@@ -687,7 +687,7 @@ const products: Product[] = productsDAO.map((v) => {
   return {
     ...v,
     area: newArea,
-    link: v.link || `https://search.shopping.naver.com/search/all?query=${v.name}`,
+    link: v.link || `https://msearch.shopping.naver.com/search/all?query=${v.name}`,
     rate,
   };
 });
